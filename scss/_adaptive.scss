@@ -165,7 +165,7 @@
     .third_section {
         .container {
             .rigth_div--photo {
-              width: 300px;
+              width: 290px;
               height: 300px;
             }
           }
@@ -242,3 +242,120 @@
     }
       
   }
+
+  @media screen and (max-width: 1065px) {
+    .fourth_section {
+      .fourth_container {
+        max-width: 805px;
+  
+        .fourth_title {
+          font-size: 30px;
+        }
+  
+        .fourth_item img {
+          max-width: 250px;
+        }
+  
+        .fourth_title--team {
+          font-size: 15px;
+        }
+  
+        .fourth_text {
+          font-size: 14px;
+        }
+  
+        .fourth_text {
+          max-width: 250px;
+        }
+  
+        .fourth_link {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+      .fourth_section {
+          .fourth_container {
+              max-width: 550px;
+  
+              .fourth_title {
+                  font-size: 25px;
+              }
+  
+              .fourth_btn {
+                  width: 150px;
+              }
+  
+              .fourth_item {
+                  grid-template-areas: "first second"
+                                        "third third";
+                  display: grid;
+                  
+                  .fourth_card {
+                      justify-self: center;
+                      &:last-child{
+                        margin-top: 50px;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  @media screen and (max-width: 515px) {
+    .fourth_section {
+        .fourth_container {
+            max-width: 390px;
+  
+            .fourth_title {
+                font-size: 20px;
+            }
+           
+            .fourth_btn {
+                width: 100px;
+            }
+            .first_card, .second_card, .third_card{
+              padding-bottom: 40px;
+            }
+            .fourth_item {
+                grid-template-areas: "first"
+                                      "second"
+                                      "third";
+                display: grid;
+                justify-content: center;
+  
+                .fourth_card {
+                  &:last-child{
+                    margin-top: 50px;
+                    margin-top: 0;
+                  }
+              }
+              }
+         }
+  }
+  }
+  @media screen and (max-width: 390px) {
+    .fourth_section {
+        .fourth_container {
+            max-width: 280px;
+          .fourth_header{
+            align-items: center;
+          }
+            .fourth_title {
+                font-size: 17px;
+                display: none;
+            }
+            .mobile{
+              display: flex;
+            }
+            .fourth_btn {
+                width: 100px;
+            }
+            .btn{
+              padding: 0;
+            }
+            
+          }
+        }
+      }
