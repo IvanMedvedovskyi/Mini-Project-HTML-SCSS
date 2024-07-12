@@ -1,0 +1,99 @@
+@media screen and (max-width: 1370px) {
+    body {
+
+        header {
+
+            .header__container {
+    
+                .header__container--menu {
+                    margin-left: 380px;
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 970px) {
+    body {
+
+        header {
+
+            .header__container {
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                .header__container--menu {
+                    margin-left: 0;
+                }
+                .header__container--line {
+                    border: 1px solid rgba(161, 161, 161, 1);
+                    width: 100vw;
+                    opacity: 0.3;
+                }
+                .header__container--info {
+
+                    .header__container--title {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 610px) {
+    body {
+
+        header {
+
+            .header__container {
+                height: 700px;
+                .header__container--menu {
+                    display: grid;
+                    grid-template-areas:
+                    "erste zweite dreitte" 
+                    "vierte . fünfte";
+                    gap: 0px;
+                    height: 100px;
+                    .header__container--link {
+                        font-size: 15px;
+                        padding: 0 10px;
+                    }
+                    .header__container--link::after {
+                        animation: none;
+                    }
+                    .header__container--link:hover::after {
+                        animation: none;
+                    }
+                    .erste {
+                        grid-area: erste;
+                    }
+                    .zweite {
+                        grid-area: zweite;
+                    }
+                    .dreitte {
+                        grid-area: dreitte;
+                    }
+                    .vierte {
+                        grid-area: vierte;
+                    }
+                    .fünfte {
+                        grid-area: fünfte;
+                    }
+                }
+                .header__container--info {
+                    margin-bottom: 100px;
+                    margin-top: 150px;
+                    .header__container--title {
+                        font-size: 28px;
+                        line-height: 35.5px;
+                    }
+                    .header__container--btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
