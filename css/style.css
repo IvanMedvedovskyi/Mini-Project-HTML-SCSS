@@ -102,7 +102,7 @@
 }
 @media screen and (max-width: 800px) {
   .third_section .container .rigth_div--photo {
-    width: 300px;
+    width: 290px;
     height: 300px;
   }
 }
@@ -149,6 +149,94 @@
   .third_section .container .rigth_div--photo {
     width: 250px;
     height: 250px;
+  }
+}
+@media screen and (max-width: 1065px) {
+  .fourth_section .fourth_container {
+    max-width: 805px;
+  }
+  .fourth_section .fourth_container .fourth_title {
+    font-size: 30px;
+  }
+  .fourth_section .fourth_container .fourth_item img {
+    max-width: 250px;
+  }
+  .fourth_section .fourth_container .fourth_title--team {
+    font-size: 15px;
+  }
+  .fourth_section .fourth_container .fourth_text {
+    font-size: 14px;
+  }
+  .fourth_section .fourth_container .fourth_text {
+    max-width: 250px;
+  }
+  .fourth_section .fourth_container .fourth_link {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fourth_section .fourth_container {
+    max-width: 550px;
+  }
+  .fourth_section .fourth_container .fourth_title {
+    font-size: 25px;
+  }
+  .fourth_section .fourth_container .fourth_btn {
+    width: 150px;
+  }
+  .fourth_section .fourth_container .fourth_item {
+    grid-template-areas: "first second" "third third";
+    display: grid;
+  }
+  .fourth_section .fourth_container .fourth_item .fourth_card {
+    justify-self: center;
+  }
+  .fourth_section .fourth_container .fourth_item .fourth_card:last-child {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .fourth_section .fourth_container {
+    max-width: 390px;
+  }
+  .fourth_section .fourth_container .fourth_title {
+    font-size: 20px;
+  }
+  .fourth_section .fourth_container .fourth_btn {
+    width: 100px;
+  }
+  .fourth_section .fourth_container .first_card, .fourth_section .fourth_container .second_card, .fourth_section .fourth_container .third_card {
+    padding-bottom: 40px;
+  }
+  .fourth_section .fourth_container .fourth_item {
+    grid-template-areas: "first" "second" "third";
+    display: grid;
+    justify-content: center;
+  }
+  .fourth_section .fourth_container .fourth_item .fourth_card:last-child {
+    margin-top: 50px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .fourth_section .fourth_container {
+    max-width: 280px;
+  }
+  .fourth_section .fourth_container .fourth_header {
+    align-items: center;
+  }
+  .fourth_section .fourth_container .fourth_title {
+    font-size: 17px;
+    display: none;
+  }
+  .fourth_section .fourth_container .mobile {
+    display: flex;
+  }
+  .fourth_section .fourth_container .fourth_btn {
+    width: 100px;
+  }
+  .fourth_section .fourth_container .btn {
+    padding: 0;
   }
 }
 * {
@@ -459,5 +547,128 @@ header .header__container .header__container--info .header__container--btn {
   margin-right: 13px;
 }
 .third_section .mobile_left-div {
+  display: none;
+}
+
+.fourth_section {
+  background-color: #504DC2;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.fourth_container {
+  width: 100%;
+  max-width: 1110px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.fourth_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.fourth_title {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 52.66px;
+  text-align: left;
+  color: white;
+  width: 540px;
+}
+
+.fourth_btn {
+  width: 200px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: #4985FF;
+  border: none;
+  transition: 0.5s;
+  color: white;
+}
+.fourth_btn:hover {
+  color: #4985FF;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn {
+  padding-top: 20px;
+}
+
+.fourth_item {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: "first second third";
+  padding-top: 70px;
+  max-width: 1110px;
+  padding-bottom: 170px;
+}
+
+.first_card {
+  grid-area: first;
+}
+
+.second_card {
+  grid-area: second;
+}
+
+.third_card {
+  grid-area: third;
+}
+
+.fourth_cards {
+  border-radius: 10px;
+}
+
+.fourth_img {
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.fourth_span {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  color: #4985FF;
+}
+
+.fourth_title--team {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  text-align: left;
+  max-width: 540px;
+  margin-bottom: 30px;
+}
+
+.fourth_text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.36px;
+  text-align: left;
+  color: #999999;
+  margin-bottom: 40px;
+  max-width: 350px;
+}
+
+.fourth_link {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: left;
+  color: #4985FF;
+}
+
+.mobile {
   display: none;
 }
