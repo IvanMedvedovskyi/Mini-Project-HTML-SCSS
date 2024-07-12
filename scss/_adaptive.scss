@@ -27,7 +27,6 @@
                 }
                 .header__container--line {
                     border: 1px solid rgba(161, 161, 161, 1);
-                    width: 100vw;
                     opacity: 0.3;
                 }
                 .header__container--info {
@@ -158,3 +157,88 @@
     }
     
 }
+
+
+//third section
+
+@media screen and (max-width: 800px) {
+    .third_section {
+        .container {
+            .rigth_div--photo {
+              width: 300px;
+              height: 300px;
+            }
+          }
+        
+    }
+}
+    
+  
+  @media screen and (max-width: 600px) {
+    main{
+        .third_section {
+            & .container {
+              & .first-line {
+                display: flex;
+                flex-direction: column;
+        
+                & .mobile_left-div {
+                  display: block;
+                  text-align: center;
+                }
+        
+                & .right-div {
+                  display: none !important;
+                }
+        
+                & .left-div {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+              }
+            }
+        
+            .bottom-divs {
+              display: grid;
+              justify-content: center;
+              gap: 25px;
+              grid-template-areas: "first second"
+                                        "third forth";
+        
+              & .first {
+                grid-area: first;
+              }
+        
+              & .second {
+                grid-area: second;
+              }
+        
+              & .third {
+                grid-area: third;
+              }
+        
+              & .forth {
+                grid-area: forth;
+              }
+        
+              & .fifth {
+                display: none;
+              }
+            }
+          }
+    }
+    
+  }
+  
+  @media screen and (max-width: 327px) {
+    .third_section{
+        .container {
+            .rigth_div--photo {
+              width: 250px;
+              height: 250px;
+            }
+          }
+    }
+      
+  }
