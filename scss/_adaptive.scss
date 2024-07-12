@@ -97,3 +97,64 @@
     }
     
 }
+
+
+
+//second section
+@media screen and (max-width: 720px) {
+    body{
+        .second_section{
+            .container{
+                .second_section--cards{
+                    grid-template-areas: "first second"
+                                         "third third";
+
+                 .card:last-child {
+                    justify-content: center;
+                    margin-top: 15px;
+                 }
+                }
+            }
+        }
+    } 
+    
+}
+@media screen and (max-width: 620px) {
+    body{
+        .second_section{
+            .container{
+                .second_section--cards{
+                    grid-template-areas: "first"
+                                        "second"
+                                         "third";
+                    justify-content: center;
+                    padding: 0 10px;
+                }
+                .card:not(:last-child){
+                    margin-bottom: 25px;
+                }
+                .card img{
+                    width: 85px;
+                    height: 82px;
+                }
+            }
+        }
+    } 
+    
+}
+
+@media screen and (max-width: 590px){
+    .second_section{
+        .container{
+            .section_text--block{
+                .second_section--title{
+                    font-size: 25px;
+                }
+                .second_section--text{
+                        font-size: 13px;
+                }
+            }
+        }
+    }
+    
+}
